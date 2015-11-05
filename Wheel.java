@@ -11,7 +11,16 @@ public class Wheel implements DataGenerator {
 
 	@Override
 	public void generateData(String outputFile, double time, double step) {
-		// TODO Auto-generated method stub
+		double accumulated = 0.0;
+		
+		double x, y, vx, vy;
+		while (accumulated <= time) {
+
+			x = Math.cos(angle);
+			y = Math.sin(angle);
+			
+			accumulated+=step;
+		}
 		
 	}
 	
